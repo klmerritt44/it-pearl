@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!--This is for our character set.-->
-    <title>HMTL Asssignment - Buffalo River Markup</title>
+    <title>HTML Asssignment - Buffalo River Markup</title>
     <!--This <title> tag is for my META TITLE that will show in the tab & in SERPs.-->
     <meta name="description" content="First HTML assignment">
     <!--This is my META DESCRIPTION that will show on SERPs and affects click-through rates.-->
@@ -12,10 +12,17 @@
     <!--This is where the author info goes which can show in certain site search appliances.-->
 </head>
 <body>
+    <header>
+        <h1>Wiki Website</h1>
+    </header>
+    <!---Would my primary nav go inside the header tag?-->
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Portal:Current_events">Discover News</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Gettin%27_Jiggy_wit_It">Get Wiki With It</a></li>
+        </ul>
+    </nav>
     <main>
-        <header>
-            <h1>Wiki Website</h1>
-        </header>
         <section class="info-box">
             <h2>Physical characteristics</h2>
             <p>Length 153 miles (246 km) Discharge</p>
@@ -29,12 +36,14 @@
                 <li>Designated	April 22, 1992</li>
             </ul>
         </section>
-        <article>
+        <section id="content">
+            <!--Going back and forth on marking this content section up as a an <article> instead-->
             <h1>Buffalo River National Park</h1>
             <h2 id="location">Where is the Buffalo River and watershed located?</h2>
             <p>The National Park Service headquarters for the Buffalo National River is located in Harrison, Arkansas.</p>
             <p>The Buffalo National River, in Northern Arkansas, was the first National River to be designated in the United States. It is 153 miles (246 km) long. The lower 135 miles (217 km) flow within the boundaries of an area managed by the National Park Service, where the stream is designated the Buffalo National River. The river flows through Newton, Searcy, Marion, and Baxter Counties, from west to east. The river originates in the highest part of the Boston Mountains of the Ozarks, flows out onto the Springfield Plateau near the historic community of Erbie, and finally crosses a portion of the Salem Plateau just before joining the White River. The Park is home to the state's only elk herd. The upper section of the river in the Ozark National Forest is managed by the U.S. Forest Service and is designated as a National Scenic River and a National Wild River.</p>
             <h2 id="history">History</h2>
+            <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="university of arkanasas at little rock logo"/>
             <p>The Buffalo National River was established by an Act of Congress on March 1, 1972, ending the recurring plans of the <em>U.S. Army Corps of Engineers</em> to construct one or more dams on the river. The National River designation protects natural rivers from industrial uses, impoundments and other obstructions that may change the natural character of the river or disrupt the natural habitat for the flora and fauna that live in or near the river. Three segments totaling 11,978 acres (48.47 km2) were designated the Buffalo National River Wilderness in 1975.</p>
             <h2 id="description">Geographical Description</h2>
             <p>At a point about 15 miles (24 km) above the Park boundary in Newton County, Arkansas, the Buffalo River begins as the Main Prong of Big Buffalo Creek. The river flows north through Boxley to Ponca, where it then begins an eastward trek across northern Arkansas to its confluence with the White River on the Marion-Baxter County line. Advanced canoeists and kayakers often refer to the 15-mile (24 km) section upriver from Boxley as the Hailstone River. This extremely challenging section of the river is floatable only during periods of high water and should be attempted only by those with solid whitewater skills.</p>
@@ -93,20 +102,57 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eligendi consectetur aliquam exercitationem maxime similique quas dignissimos corrupti doloremque deserunt unde perferendis expedita, modi reiciendis architecto corporis maiores nisi eum ullam incidunt harum voluptates optio!</p>
             <h5>Kayaking</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quae debitis. Esse magni, laboriosam eum explicabo minima numquam ex sed similique, vitae officia impedit optio quisquam harum provident nobis rerum voluptatibus id incidunt odio. Nisi beatae aliquid odit officia aspernatur inventore illo, quisquam quasi culpa?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem magni minus quia reiciendis, perspiciatis praesentium. Asperiores explicabo provident ducimus harum enim fugit sunt doloremque, beatae aspernatur consectetur tempore dolor odit dolorum? Ea quos nesciunt ut deleniti. In quia ea modi inventore provident animi, eos a repudiandae molestias quod ullam possimus molestiae iure perferendis vel explicabo distinctio maxime quos culpa?</p>
+            <p><q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem magni minus quia reiciendis, perspiciatis praesentium. Asperiores explicabo provident ducimus harum enim fugit sunt doloremque, beatae aspernatur consectetur tempore dolor odit dolorum? Ea quos nesciunt ut deleniti.</q> In quia ea modi inventore provident animi, eos a repudiandae molestias quod ullam possimus molestiae iure perferendis vel explicabo distinctio maxime quos culpa?</p>
             <h6>Playing</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quasi maxime possimus veritatis accusamus officia illum aliquam. Ratione soluta enim eum aperiam voluptatibus illo fuga numquam, molestias deleniti ipsa placeat dolorum quis id error eveniet dignissimos debitis aspernatur quibusdam, voluptatum incidunt neque quos. Ipsum aliquid voluptatem, consequuntur nemo, velit eligendi et possimus, ipsa at quo reiciendis repellat nobis totam. Possimus, doloremque veniam. Natus ex doloribus quidem qui non aliquid quibusdam quaerat repellat sequi. Ut, molestiae!</p>
-        <section class="related-topic">
-            <h2>Reasons for River Contamination by Hog Farms</h2>
-            <ol>
-                <li><strong>Proximity to Water Sources:</strong>Hog farms operated near tributaries, raising the risk of pollutants entering the water.</li>
-                <li><strong>Manure Storage and Runoff:</strong>Large amounts of manure stored on-site can cause runoff during rainfall.</li>
-                <li><strong>Nutrient Overloading:</strong> Manure contributes nitrogen and phosphorus, which lead to algal blooms.</li>
-                <li><strong>Inconsistent Regulation:</strong> Rules changed over time, including a moratorium that was later overturned.</li>
-                <li><strong>Long-Term Impact:</strong> Residual pollutants remain in the environment even after farm operations cease.</li>
-            </ol>
+            <blockquote>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores unde repellat ipsum adipisci nobis, nam pariatur ut eius et odio nemo numquam velit veniam voluptatem!
+            </blockquote>
+            <table border="1">
+                <caption>Loren ipsum monkeys</caption>
+                <tr>
+                    <th colspan="5" scope="col">Dolores unde illo doloremque ea</th>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>22</td>
+                    <td>15</td>
+                    <td>67</td>
+                    <td>53</td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>76</td>
+                    <td>34</td>
+                    <td>22</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>57</td>
+                    <td>44</td>
+                    <td>13</td>
+                    <td>56</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>67</td>
+                    <td>43</td>
+                    <td>77</td>
+                    <td>13</td>
+                    <td>86</td>
+                </tr>
+            </table>
+            <section class="related-topic">
+                <h2>Reasons for River Contamination by Hog Farms</h2>
+                <ol>
+                    <li><strong>Proximity to Water Sources:</strong>Hog farms operated near tributaries, raising the risk of pollutants entering the water.</li>
+                    <li><strong>Manure Storage and Runoff:</strong>Large amounts of manure stored on-site can cause runoff during rainfall.</li>
+                    <li><strong>Nutrient Overloading:</strong> Manure contributes nitrogen and phosphorus, which lead to algal blooms.</li>
+                    <li><strong>Inconsistent Regulation:</strong> Rules changed over time, including a moratorium that was later overturned.</li>
+                    <li><strong>Long-Term Impact:</strong> Residual pollutants remain in the environment even after farm operations cease.</li>
+                </ol>
+            </section>
         </section>
-        </article>
         <aside class="related-links">
             <h3>Related Articles</h3>
             <a href="https://en.wikipedia.org/wiki/Category:Bodies_of_water_of_Arkansas">Bodies of Water in AR</a>
@@ -124,6 +170,7 @@
                 <li><a href="mailto:monkeyman@ualr.edu" title="Get help!">Contact</a></li>
             </ul>
         </nav>
+        <a href="#">Back to the top!</a>
     </footer>
 </body>
 </html>

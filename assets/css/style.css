@@ -1,0 +1,25 @@
+/*
+ Color Theme Swatches in Hex 
+dark navy teal { color: #093640; }
+dark teal { color: #026873; }
+medium teal { color: #038C8C; }
+bright teal { color: #03A696; }
+peach sand { color: #F2ECE9; }
+*/
+
+body {
+    background-color: #F2ECE9;
+    color: #093640;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}

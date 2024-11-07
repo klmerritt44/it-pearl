@@ -1,0 +1,40 @@
+/* style for css demo */
+ 
+/*
+#103464 - darkest blue
+#1B57A6 - darker blue
+#2A7ABF medium blue
+#365902 - dark earthy green
+#F21905 - fire red
+#8C0E03 - dark blood red
+
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: #103464;
+    font-family: "Lexend Exa", sans-serif;
+  }
+
+  main {
+    background-color: #fff;
+    width:80vw;
+    margin: 40px auto;
+    border: 20px solid #F21905;
+    border-radius:40px;
+  }
+
+  header.primary {
+    background-color: #365902;
+    padding: 20px;
+    background-image: url("../img/magnolia-blossoms-early-spring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

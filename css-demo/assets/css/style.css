@@ -18,6 +18,13 @@ html {
     box-sizing: inherit;
   }
 
+  /*----------Utility Classes------------------*/
+
+  .container {
+    padding: 40px;
+    margin:auto;
+  }
+
   body {
     background-color: #103464;
     font-family: "Lexend Exa", sans-serif;
@@ -36,4 +43,68 @@ html {
     background-image: url("../img/magnolia-blossoms-early-spring.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    border-bottom:3px, #F21905;
   }
+
+  header.primary h1, header.primary h2 {
+    margin: 0;
+  }
+  
+  header.primary h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #103464;
+  }
+
+  header.primary h2 {
+    color:#fff;
+    text-shadow: 2px 2px #103464;
+  }
+
+  header.primary div.hgroup {
+    width: 20%;
+  }
+
+  header.primary nav {
+    width: 30%;
+  }
+
+  header.primary nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  header.primary nav ul li {
+    background-color: #000;
+  }
+
+  header.primary nav ul li a {
+    border:1px solid #F21905;
+    border-right:#000;
+    border-radius: 10px 0;
+    color: #fff;
+    display: block;
+    background-color: rgba (0,0,0,.2);
+    text-align: right;
+    padding: 10px 10px 10px 0px;
+    text-decoration: none;
+  }
+
+  header.primary nav a:hover {
+    background-color: rgba(0,0,0,.3);
+    text-decoration: underline;
+  }
+
+ #content {
+  line-height:1.2rem;
+ }
+
+ #content h2, #content h3 {
+  color: #365902;
+  border-left: 7.5px solid #103464;
+  padding: 7.5px;
+  border-radius: 15px 0px;
+ }

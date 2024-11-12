@@ -8,18 +8,20 @@
     <meta name="description" content="Form practice!" />
     <meta name="author" content="Kristena Merritt" />
     <link href="assets/css/style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
 </head>
 
-<form action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+<form id="medical-form" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
     <fieldset>
         <legend>New Patient Registration</legend>
         <label class="formlabel" for="name">First Name:</label>
-        <input type="text" size="30" maxlength="30" id="name" name="name"/>
+        <input data-rule-required="true" data-msg-required="First name is required." type="text" size="30" maxlength="30" id="name" name="name"/>
         <label class="formlabel" for="name">Middle Initial</label>
         <input type="text" size="1" maxlength="1" id="name" name="name"/>
         <label class="formlabel" for="name">Last Name:</label>
         <input type="text" size="30" maxlength="30" id="name" name="name"/>
-    
     
         <label class="formlabel" for="email">Email</label>
         <input type="email" size="30" maxlength="30" id="email" name="email"/>
@@ -36,7 +38,7 @@
         <label class="formlabel" for="weight">Weight (pounds)</label>
         <input type="text" size="3" maxlength="3" id="weight" name="weight"/>  
         <label class="formlabel" for="telephone">Phone Number</label>
-        <input type="tel" name="phonenumber"/>
+        <input type="tel" name="phonenumber" id="telephone"/>
         <label class="formlabel" for="marital">Marital Status</label>
         <select id="marital" name="marital">
             <option value="">Select an Option...</option>
@@ -115,10 +117,13 @@
     </fieldset>
         <input type="submit" value="Submit" />
     </fieldset>
-    
-
-
 
 </form>
+
+<script>
+    $( "#medical-form" ).validate({
+    
+    });                    
+    </script>
 
 </html>

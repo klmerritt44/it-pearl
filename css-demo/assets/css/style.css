@@ -1,4 +1,4 @@
-/* style for css demo */
+/* -------css demo stylesheet-------- */
  
 /*
 VIVID COLORS
@@ -14,6 +14,18 @@ MUTED COLORS
 #9093E2 - periwinkle
 
 */
+
+:root {
+  --body-text: #00008B;
+  --body-text-inverse: #e6e5e0;
+  --light-bg: #E3DFF2;
+  --dark-bg: #103464;
+  --dark-bg-opacity: rgba(2, 30, 1, 0.7);
+  --standard-padding: 30px;
+  --border: #9093E2;
+  --light-button: #E3DFF2;
+  ---dark-button: #365902;
+}
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -35,8 +47,9 @@ html {
   }
 
   body {
-    background-color: #103464;
+    background-color: var(--dark-bg);
     font-family: "Lexend Exa", sans-serif;
+    color: var(--body-text);
   }
 
   a {
@@ -51,7 +64,7 @@ html {
     background-color: #fff;
     width:80vw;
     margin: 40px auto;
-    border: 10px solid #F21905;
+    border: 10px solid var(--border);
     border-radius:20px;
   }
 
@@ -61,8 +74,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    border-bottom:3px, #F21905;
-    background-color: #103464;
+    border-bottom:3px solid var(--border);
+    background-color: var(--border);
     background-blend-mode:hard-light;
   }
 
@@ -103,12 +116,12 @@ html {
   }
 
   header.primary nav ul li a {
-    border:1px solid #ff005d;
-    border-right:#ff005d solid 10px;
+    border:1px solid var(--border);
+    border-right:var(--border) solid 10px;
     border-radius: 20px 0;
     color: #fff;
     display: block;
-    background-color: #103464;
+    background-color: var(---dark-button);
     transition: .5s;
     font-size:.9rem;
     text-align: right;
@@ -117,7 +130,7 @@ html {
   }
 
   header.primary nav a:hover {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(54, 89, 2, .7);
   }
 
  #content {
@@ -134,8 +147,8 @@ html {
  #blog {
   background: #103464;
   padding: 20px 0;
-  border-top: 6px double #F21905;
-  border-bottom: 6px double #F21905;
+  border-top: 6px double var(--border);
+  border-bottom: 6px double var(--border);
  }
 
  #blog article.post {
@@ -170,7 +183,7 @@ html {
  }
 
  #blog > h2 {
-  color: #fff;
+  color: var(--body-text-inverse);
   text-shadow: 0, 0, 0, .8;
   font-size: 2.2rem;
   margin-left
@@ -186,7 +199,7 @@ aside .container {
 
 #colophon {
   text-align: center;
-  background-color: #103464;
+  background-color: var(--dark-bg);
   background-image: url("../img/magnolia-blossoms-early-spring.jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -198,6 +211,6 @@ aside .container {
 
 #colophon a {
   font-size: .7rem;
-  color: #fff;
+  color: var(--body-text-inverse);
 }
 

@@ -1,12 +1,17 @@
 /* style for css demo */
  
 /*
+VIVID COLORS
 #103464 - darkest blue
 #1B57A6 - darker blue
-#2A7ABF medium blue
+#2A7ABF - medium blue
 #365902 - dark earthy green
 #F21905 - fire red
 #8C0E03 - dark blood red
+
+MUTED COLORS
+#E3DFF2 - light gray blue
+#9093E2 - periwinkle
 
 */
 
@@ -34,12 +39,20 @@ html {
     font-family: "Lexend Exa", sans-serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   main {
     background-color: #fff;
     width:80vw;
     margin: 40px auto;
-    border: 20px solid #F21905;
-    border-radius:40px;
+    border: 10px solid #F21905;
+    border-radius:20px;
   }
 
   header.primary {
@@ -49,6 +62,8 @@ html {
     background-size: cover;
     display: flex;
     border-bottom:3px, #F21905;
+    background-color: #103464;
+    background-blend-mode:hard-light;
   }
 
   header.primary h1, header.primary h2 {
@@ -65,10 +80,12 @@ html {
   header.primary h2 {
     color:#fff;
     text-shadow: 2px 2px #103464;
+    font-size: 1.1rem;
+    margin-top: 10px;
   }
 
   header.primary div.hgroup {
-    width: 20%;
+    width: 70%;
   }
 
   header.primary nav {
@@ -82,24 +99,25 @@ html {
   }
 
   header.primary nav ul li {
-    background-color: #000;
+    margin-bottom: 15px;
   }
 
   header.primary nav ul li a {
-    border:1px solid #F21905;
-    border-right:#000;
-    border-radius: 10px 0;
+    border:1px solid #ff005d;
+    border-right:#ff005d solid 10px;
+    border-radius: 20px 0;
     color: #fff;
     display: block;
-    background-color: rgba (0,0,0,.2);
+    background-color: #103464;
+    transition: .5s;
+    font-size:.9rem;
     text-align: right;
     padding: 10px 10px 10px 0px;
     text-decoration: none;
   }
 
   header.primary nav a:hover {
-    background-color: rgba(0,0,0,.3);
-    text-decoration: underline;
+    background-color: rgba(0,0,0,.7);
   }
 
  #content {
@@ -168,10 +186,18 @@ aside .container {
 
 #colophon {
   text-align: center;
+  background-color: #103464;
   background-image: url("../img/magnolia-blossoms-early-spring.jpg");
+  background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  padding: 20px;
+  text-align: left;
+}
 
+#colophon a {
+  font-size: .7rem;
+  color: #fff;
 }
 

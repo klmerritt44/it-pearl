@@ -17,39 +17,47 @@
     <fieldset>
         <legend>New Patient Registration</legend>
         <label class="formlabel" for="name">First Name:</label>
-        <input data-rule-required="true" data-msg-required="First name is required." type="text" size="30" maxlength="30" id="name" name="name"/>
+        <input type="text" size="30" maxlength="30" id="name" name="name" data-rule-required="true" data-msg-required="First name is required."/>
+        <br/>
         <label class="formlabel" for="name">Middle Initial</label>
         <input type="text" size="1" maxlength="1" id="name" name="name"/>
+        <br/>
         <label class="formlabel" for="name">Last Name:</label>
-        <input type="text" size="30" maxlength="30" id="name" name="name"/>
-    
+        <input type="text" size="30" maxlength="30" id="name" name="name" data-rule-required="true" data-msg-required="Last name is required."/>
+        <br/>
         <label class="formlabel" for="email">Email</label>
-        <input type="email" size="30" maxlength="30" id="email" name="email"/>
-   
+        <input type="email" size="30" maxlength="30" id="email" name="email" data-rule-required="true" data-msg-required="Please enter a valid email." data-msg-email="Invalid Email"/>
+        <br/>
         <label class="formlabel">Sex:</label>
-        <label for="male"><input type="radio" id="male" name="male" value="M"/>Male</label>
-        <label for="female"><input type="radio" id="female" name="female" value="F"/>Female</label>
-        <label for="na"><input type="radio" id="na" name="na" value="N"/>N/A</label>
-        <!--WHY ARE THE RADIO BUTTONS ALLOWING ALL TO BE SELECTED AT ONCE???-->
+        <label for="male"><input type="radio" id="male" name="sex" value="M" data-rule-required="true" data-msg-required="Please enter your sex."/>Male</label>
+        <label for="female"><input type="radio" id="female" name="sex" value="F" data-rule-required="true" data-msg-required="Please enter your sex."/>Female</label>
+        <label for="na"><input type="radio" id="na" name="sex" value="N" data-rule-required="true" data-msg-required="Please enter your sex."/>N/A</label>
+        <br/>
         <label class="formlabel" for="birthday">Birthday</label>
-        <input type="text" size="8" maxlength="8" id="birthday" name="birthday"/>    
+        <input type="text" size="8" maxlength="8" id="birthday" name="birthday" data-rule-date="true" data-msg-date="Date must be MM/DD/YYYY format" data-rule-required="true" data-msg-required="Please enter your birthday."/>
+        <br/>
         <label class="formlabel" for="height">Height (inches)</label>
-        <input type="text" size="3" maxlength="3" id="height" name="height"/>  
+        <input type="text" size="3" maxlength="3" id="height" name="height" data-rule-required="true" data-msg-required="Please enter your sex."/>  
+        <br/>
         <label class="formlabel" for="weight">Weight (pounds)</label>
-        <input type="text" size="3" maxlength="3" id="weight" name="weight"/>  
+        <input type="text" size="3" maxlength="3" id="weight" name="weight"/>
+        <br/>
+        <hr/>
         <label class="formlabel" for="telephone">Phone Number</label>
-        <input type="tel" name="phonenumber" id="telephone"/>
+        <input type="tel" name="phonenumber" id="telephone" data-msg-phoneUS="Invalid Phone Number"/>
+        <br/>
         <label class="formlabel" for="marital">Marital Status</label>
-        <select id="marital" name="marital">
-            <option value="">Select an Option...</option>
+        <select id="marital" name="marital" data-rule-required="true" data-msg-required="Marital status is required.">
+            <option value="" selected>Select an Option...</option>
             <option value="S">Single</option>
             <option value="M">Married</option>
             <option value="L">Legally Separated</option>
             <option value="W">Widowed</option>
         </select>
-    <fieldset>
+        <br/>
         <label class="formlabel" for="address">Address</label>
-        <input type="text" size="30" id="address" maxlength="30" name="address"/>
+        <input type="text" size="30" id="address" maxlength="30" name="address" data-msg-maxlength="Address must be less than 30 characters"/>
+        <br/>
         <label class="formlabel" for="city-state-zip">City/State/Zip</label>
         <input type="text" size="30" id="city" maxlength="30" name="city"/>
         <select name="state" id="state">
@@ -107,15 +115,15 @@
             <option value="WY">Wyoming</option>
         </select>
         <input type="text" size="5" maxlength="5"/>
-    </fieldset>
-    <fieldset>
-        <label>Taking Medications:</label>
+        <br/>
+        <hr/>
+        <label class="formlabel">Taking Medications:</label>
         <label for="yes"><input type="radio" id="yes" name="yes"/>Yes</label>
         <label for="no"><input type="radio" id="no" name="no"/>No</label>
-        <label for="medications">If yes, list medications here:</label>
-        <input type="text" id="medications" name="medications"/>
-    </fieldset>
-        <input type="submit" value="Submit" />
+        <label for="medicationslist">If yes, list medications here:</label>
+        <input type="text" id="medications" name="medicationslist"/>
+        <br/>
+        <input type="submit" value="Submit Patient Form" />
     </fieldset>
 
 </form>

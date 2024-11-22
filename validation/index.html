@@ -58,9 +58,9 @@
         <label class="formlabel" for="address">Address</label>
         <input type="text" size="30" id="address" maxlength="30" name="address" data-msg-maxlength="Address must be less than 30 characters" data-rule-required="true" data-msg-required="Please enter your address."/>
         <br/>
-        <label class="formlabel" for="city-state-zip">City/State/Zip</label>
-        <input type="text" size="30" id="city-state-zip" maxlength="30" name="city" data-rule-required="true" data-msg-required="Please enter your city."/>
-        <select name="state" id="city-state-zip" data-rule-required="true" data-msg-required="Please select your state.">
+        <label class="formlabel" for="city">City/State/Zip</label>
+        <input type="text" size="30" id="city" maxlength="30" name="city" data-rule-required="true" data-msg-required="Please enter your city."/>
+        <select name="state" id="state" data-rule-required="true" data-msg-required="Please select your state.">
             <option value="" selected="selected">Select a State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -114,12 +114,12 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
         </select>
-        <input type="text" size="5" id="city-state-zip" data-rule-minlength="5" data-msg-minlength="Zip code must be at least 5 digits!" data-rule-required="true" data-msg-required="Please enter your zip code."/>
+        <input type="text" size="5" id="zip" data-rule-minlength="5" data-msg-minlength="Zip code must be at least 5 digits!" data-rule-required="true" data-msg-required="Please enter your zip code."/>
         <br/>
         <hr/>
         <label class="formlabel">Taking Medications:</label>
-        <label for="yes"><input type="radio" id="yes" name="yes" data-rule-required="true" data-msg-required="Please select yes or no."/>Yes</label>
-        <label for="no"><input type="radio" id="no" name="no"/>No</label>
+        <label for="med-yes"><input type="radio" id="med-yes" name="meds" data-rule-required="true" data-msg-required="Please select yes or no."/>Yes</label>
+        <label for="med-no"><input type="radio" id="med-no" name="meds"/>No</label>
         <label for="medicationslist">If yes, list medications here:</label>
         <input type="text" id="medicationslist" name="medicationslist"/>
         <br/>

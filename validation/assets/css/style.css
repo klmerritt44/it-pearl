@@ -1,4 +1,7 @@
-
+legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 
 .formlabel {
     display: inline-block;
@@ -9,10 +12,9 @@
 }
 
 input:focus, textarea:focus, select:focus {
-    border: solid 4px #0658fc;
+    border: solid 3px #0658fc;
     outline: none;
 }
-
 
 .error {
     color: #FF0000;

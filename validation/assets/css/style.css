@@ -8,16 +8,8 @@
     font-weight: bold;
 }
 
-/*---trying to fix this
-.formlabel, input, select, label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-----*/
-
 input:focus, textarea:focus, select:focus {
-    border: solid 4px #06ebfc;
+    border: solid 4px #0658fc;
     outline: none;
 }
 

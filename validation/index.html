@@ -18,37 +18,37 @@
         <legend>New Patient Registration</legend>
         <p>Please fill out the form below.</p>
         <label class="formlabel" for="f-name">First Name:</label>
-        <input type="text" size="30" maxlength="30" id="f-name" name="f-name" data-rule-required="true" data-msg-required="First name is required."/>
+        <input type="text" size="30" maxlength="30" id="f-name" name="FirstName" data-rule-required="true" data-msg-required="First name is required."/>
         <br/>
         <label class="formlabel" for="m-name">Middle Initial:</label>
-        <input type="text" size="1" maxlength="1" id="m-name" name="m-name"/>
+        <input type="text" size="1" maxlength="1" id="m-name" name="MiddleInitial"/>
         <br/>
         <label class="formlabel" for="l-name">Last Name:</label>
-        <input type="text" size="30" maxlength="30" id="l-name" name="l-name" data-rule-required="true" data-msg-required="Last name is required."/>
+        <input type="text" size="30" maxlength="30" id="l-name" name="LastName" data-rule-required="true" data-msg-required="Last name is required."/>
         <br/>
         <label class="formlabel" for="email">Email:</label>
-        <input type="email" size="30" maxlength="30" id="email" name="email" data-rule-required="true" data-msg-required="Please enter a valid email." data-msg-email="Invalid Email"/>
+        <input type="email" size="30" maxlength="30" id="email" name="Email" data-rule-required="true" data-msg-required="Please enter a valid email." data-msg-email="Invalid Email"/>
         <br/>
         <label class="formlabel">Sex:</label>
-        <label for="male"><input type="radio" id="male" name="sex" value="M" data-rule-required="true" data-msg-required="Please enter your sex."/>Male</label>
-        <label for="female"><input type="radio" id="female" name="sex" value="F" data-rule-required="true" data-msg-required="Please enter your sex."/>Female</label>
-        <label for="na"><input type="radio" id="na" name="sex" value="N" data-rule-required="true" data-msg-required="Please enter your sex."/>N/A</label>
+        <label for="male"><input type="radio" id="male" name="Sex" value="M" data-rule-required="true" data-msg-required="Please enter your sex."/>Male</label>
+        <label for="female"><input type="radio" id="female" name="Sex" value="F" data-rule-required="true" data-msg-required="Please enter your sex."/>Female</label>
+        <label for="na"><input type="radio" id="na" name="Sex" value="N" data-rule-required="true" data-msg-required="Please enter your sex."/>N/A</label>
         <br/>
         <label class="formlabel" for="birthday">Birthday:</label>
-        <input type="text" size="8" maxlength="8" id="birthday" name="birthday" data-rule-date="true" data-msg-date="Date must be MM/DD/YYYY format" data-rule-required="true" data-msg-required="Please enter your birthday."/>
+        <input type="text" size="8" maxlength="8" id="birthday" name="Birthday" data-rule-date="true" data-msg-date="Date must be MM/DD/YY format" data-rule-required="true" data-msg-required="Please enter your birthday."/>
         <br/>
         <label class="formlabel" for="height">Height (inches):</label>
-        <input type="text" size="3" maxlength="3" id="height" name="height" data-rule-min="12" data-rule-max="120"  data-rule-required="true" data-msg-required="Please enter your height."/>  
+        <input type="text" size="3" maxlength="3" id="height" name="Height" data-rule-min="12" data-rule-max="120"  data-rule-required="true" data-msg-required="Please enter your height."/>  
         <br/>
         <label class="formlabel" for="weight">Weight (pounds):</label>
-        <input type="text" size="3" maxlength="3" id="weight" name="weight" data-rule-min="10" data-rule-max="500"  data-rule-required="true" data-msg-required="Please enter your weight."/>
+        <input type="text" size="3" maxlength="3" id="weight" name="Weight" data-rule-min="10" data-rule-max="500"  data-rule-required="true" data-msg-required="Please enter your weight."/>
         <br/>
         <hr/>
         <label class="formlabel" for="telephone">Phone Number:</label>
-        <input type="tel" name="phonenumber" id="telephone" data-rule-required="true" data-msg-required="Please enter your telephone number." data-rule-phoneUS="true" data-msg-phoneUS="Invalid Phone Number"/>
+        <input type="tel" name="PhoneNumber" id="telephone" data-rule-required="true" data-msg-required="Please enter your telephone number." data-rule-phoneUS="true" data-msg-phoneUS="Invalid Phone Number"/>
         <br/>
         <label class="formlabel" for="marital">Marital Status:</label>
-        <select id="marital" name="marital" data-rule-required="true" data-msg-required="Marital status is required.">
+        <select id="marital" name="MaritalStatus" data-rule-required="true" data-msg-required="Marital status is required.">
             <option value="" selected>Select an Option...</option>
             <option value="S">Single</option>
             <option value="M">Married</option>
@@ -58,11 +58,11 @@
         </select>
         <br/>
         <label class="formlabel" for="address">Address:</label>
-        <input type="text" size="30" id="address" maxlength="30" name="address" data-msg-maxlength="Address must be less than 30 characters" data-rule-required="true" data-msg-required="Please enter your address."/>
+        <input type="text" size="30" id="address" maxlength="30" name="Address" data-msg-maxlength="Address must be less than 30 characters" data-rule-required="true" data-msg-required="Please enter your address."/>
         <br/>
         <label class="formlabel" for="city">City/State/Zip:</label>
-        <input type="text" size="30" id="city" maxlength="30" name="city" data-rule-required="true" data-msg-required="Please enter your city."/>
-        <select name="state" id="state" data-rule-required="true" data-msg-required="Please select your state.">
+        <input type="text" size="30" id="city" maxlength="30" name="City" data-rule-required="true" data-msg-required="Please enter your city."/>
+        <select name="State" id="state" data-rule-required="true" data-msg-required="Please select your state.">
             <option value="" selected="selected">Select a State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -116,14 +116,14 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
         </select>
-        <input type="text" size="5" id="zip" data-rule-minlength="5" data-msg-minlength="Zip code must be at least 5 digits!" data-rule-required="true" data-msg-required="Please enter your zip code."/>
+        <input type="text" name="Zip" size="5" id="zip" data-rule-minlength="5" data-msg-minlength="Zip code must be 5 digits!" data-rule-maxlength="5" data-msg-maxlength="Zip code must be 5 digits!" data-rule-required="true" data-msg-required="Please enter your zip code."/>
         <br/>
         <hr/>
         <label class="formlabel">Taking Medications:</label>
-        <label for="med-yes"><input type="radio" id="med-yes" name="meds" data-rule-required="true" data-msg-required="Please select yes or no."/>Yes</label>
-        <label for="med-no"><input type="radio" id="med-no" name="meds"/>No</label>
+        <label for="med-yes"><input type="radio" id="med-yes" name="Medications" data-rule-required="true" data-msg-required="Please select yes or no."/>Yes</label>
+        <label for="med-no"><input type="radio" id="med-no" name="Medications"/>No</label>
         <label for="medicationslist">If yes, list medications here:</label>
-        <input type="text" id="medicationslist" name="medicationslist"/>
+        <input type="text" id="medicationslist" name="MedicationsList"/>
         <br/>
         <input type="submit" value="Submit Patient Form" />
     </fieldset>

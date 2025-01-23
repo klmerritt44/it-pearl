@@ -1,0 +1,228 @@
+
+/* Color Theme Swatches in Hex */
+.After-Summer-illustration-Collection-2024-1-hex { color: #F21D56; }
+.After-Summer-illustration-Collection-2024-2-hex { color: #081A40; }
+.After-Summer-illustration-Collection-2024-3-hex { color: #2E97F2; }
+
+/* Color Theme Swatches in RGBA */
+.After-Summer-illustration-Collection-2024-1-rgba { color: rgba(242, 29, 85, 1); }
+.After-Summer-illustration-Collection-2024-2-rgba { color: rgba(7, 26, 63, 1); }
+.After-Summer-illustration-Collection-2024-3-rgba { color: rgba(46, 150, 242, 1); }
+
+/* Color Theme Swatches in HSLA */
+.After-Summer-illustration-Collection-2024-1-hsla { color: hsla(343, 89, 53, 1); }
+.After-Summer-illustration-Collection-2024-2-hsla { color: hsla(219, 78, 14, 1); }
+.After-Summer-illustration-Collection-2024-3-hsla { color: hsla(208, 88, 56, 1); }
+
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+    background:#c0c0c0;
+    padding:20px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #081A40;
+  }
+  
+  label, input {
+    display:block;
+  }
+  
+  header h1{
+    text-align:center;
+  }
+  
+  section[id]{
+    border:6px solid rgba(0,0,0,.4);
+    background:#d1c9d9;
+    border-radius:12px;
+    margin:40px auto;
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+  h2.section-heading{
+     border-bottom:2px solid #c0c0c0;
+  }
+  
+  .section-heading{
+    flex: 0 0 100%;
+  }
+  
+  h3.section-heading{
+    border-top:2px solid #c0c0c0;
+    padding-top:20px;
+  }
+  
+  h2.section-heading + h3.section-heading {
+    border:none;
+    padding-top:0;
+  }
+  
+  .output{
+    flex: 1 30%;
+    padding-right:40px;
+    margin-bottom:40px;
+  }
+  .markup{
+    flex: 1 70%;
+    background-color:#081A40;
+    padding:10px;
+    margin-bottom:40px;
+    overflow:auto;
+  }
+  
+  
+  /**
+   * prism.js default theme for JavaScript, CSS and HTML
+   * Based on dabblet (http://dabblet.com)
+   * @author Lea Verou
+   */
+  
+  code[class*="language-"],
+  pre[class*="language-"] {
+      color: black;
+      background: none;
+      text-shadow: 0 1px white;
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      font-size: 1em;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.5;
+  
+      -moz-tab-size: 4;
+      -o-tab-size: 4;
+      tab-size: 4;
+  
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+  }
+  
+  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+      text-shadow: none;
+      background: #b3d4fc;
+  }
+  
+  pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection, code[class*="language-"] ::selection {
+      text-shadow: none;
+      background: #b3d4fc;
+  }
+  
+  @media print {
+      code[class*="language-"],
+      pre[class*="language-"] {
+          text-shadow: none;
+      }
+  }
+  
+  /* Code blocks */
+  pre[class*="language-"] {
+      padding: .25em;
+      margin: .25em;
+      overflow: auto;
+  }
+  
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+      background: #f5f2f0;
+  }
+  
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+      padding: .1em;
+      border-radius: .3em;
+      white-space: normal;
+  }
+  
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+      color: slategray;
+  }
+  
+  .token.punctuation {
+      color: #999;
+  }
+  
+  .token.namespace {
+      opacity: .7;
+  }
+  
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+      color: #905;
+  }
+  
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+      color: #690;
+  }
+  
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+      color: #9a6e3a;
+      /* This background color was intended by the author of this theme. */
+      background: hsla(0, 0%, 100%, .5);
+  }
+  
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+      color: #07a;
+  }
+  
+  .token.function,
+  .token.class-name {
+      color: #DD4A68;
+  }
+  
+  .token.regex,
+  .token.important,
+  .token.variable {
+      color: #e90;
+  }
+  
+  .token.important,
+  .token.bold {
+      font-weight: bold;
+  }
+  .token.italic {
+      font-style: italic;
+  }
+  
+  .token.entity {
+      cursor: help;
+  }

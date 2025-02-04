@@ -7,7 +7,7 @@ $( "#CircleForm" ).validate({
 });
 
 function CircleCalculations() {
-    if ($(#"CircleForm").valid()) {
+    if ($("#CircleForm").valid()) {
         let x = 1;
     window.alert("Start of Calculations");
 }

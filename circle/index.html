@@ -15,7 +15,7 @@
         <h2>Circle Calculations</h2>
         <label for="radius" class="formlabel">Enter radius of a circle:</label>
         <input type="text" id="radius" name="radius"
-               data-rule-required="true"  data-msg-required="Radius is Required" 
+               data-rule-required="true"  data-msg-required="Radius is Required!" 
                data-rule-number="true" data-msg-number="Radius must be floating point number"
                data-rule-min="0" data-msg-min="Radius must be greater than zero">
         <label for="radius" class="error" id="radiuserror"></label>
@@ -25,8 +25,8 @@
         <label class="formlabel">Circumference:</label><span id="circumference"></span><br>
         <label class="formlabel">Area:</label><span id="area"></span><br>
         <br><br>
-        <input type="submit" value="Calculate" id="btnSubmitCalculate">
-        <input type="submit" value="Clear" id="btnSubmitClear">
+        <input type="submit" value="Calculate" id="btnSubmitCalculate" onclick="calculateCircle()">
+        <input type="submit" value="Clear" id="btnSubmitClear" onclick="clearForm()">
     </form>
     
     <script src="assets/js/circle.js"></script>

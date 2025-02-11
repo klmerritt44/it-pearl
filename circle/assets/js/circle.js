@@ -1,22 +1,28 @@
 
 "use strict";
     
-$( "#CircleForm" ).validate({
+$("#CircleForm").validate().resetForm();({
 
 });
+
+
 
 function calculateCircle() {
     if ($("#CircleForm").valid()) {
         let radius = document.getElementById("radius").value;
         let radiusfp = parseFloat(radius);
+
         let diameter = calculateDiameter(radiusfp);
         document.getElementById("diameter").innerHTML = diameter;
+
         let circumference = calculateCircumference(radiusfp);
         document.getElementById("circumference").innerHTML = circumference;
+        
         let area = calculateArea(radiusfp);
         document.getElementById("area").innerHTML = area;
     }
 }
+
 
 function calculateDiameter(r) {
     return 2 * r;

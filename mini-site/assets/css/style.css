@@ -35,6 +35,7 @@ nav menu code: https://codepen.io/syahrizaldev/pen/vYRoVZX
     font-size: 1em;
     line-height: 1.5;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   *,
@@ -231,6 +232,39 @@ div.social a::after{
 /* #endregion utility */
 
 /* #region main css------*/
+header.primary h1 {
+  float: left;
+}
+
+nav.secondary {
+  background: var(--dark-bg);
+}
+
+nav.secondary a {
+  color: var(--body-text-inverse);
+}
+
+header.primary h1 a {
+  background: url(../includes/logo.svg) no-repeat ;
+  display: block;
+  width: 70px;
+  height: 90px;
+  margin: 0px auto 0px 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+
+header.primary .container {
+  max-width: 75rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
 #primary-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-450.jpg);
   background-size: cover;

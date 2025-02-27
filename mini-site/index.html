@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!--
-  <header class="header" id="primary">
+  <header class="primary">
+    <nav class="secondary"><a href="facebook.com">F</a><a href="instagram.com">Insta</a><a href="weather.html">Current Weather</a></nav>
     <section class="wrapper container">
-       <a href="./index.html" class="brand">Buffalo River Adventure Guide – Plan Your Next Getaway</a>
+       <h1><a href="index.html" class="brand">Buffalo River Adventures</a></h1>
        <h2>Explore. Camp. Paddle. Hike. Buffalo River Awaits!</h2>
        <div class="burger" id="burger">
           <span class="burger-line"></span>
@@ -31,52 +31,56 @@
              <li class="menu-item menu-dropdown">
                 <span class="menu-link" data-toggle="submenu">Explore<i class="bx bx-chevron-down"></i></span>
                 <ul class="submenu">
-                   <li class="submenu-item"><a href="#" class="submenu-link">Places to Stay</a></li>
-                   <li class="submenu-item"><a href="#" class="submenu-link">Camping Guide</a></li>
+                   <li class="submenu-item"><a href="camps.html" class="submenu-link">Camps</a></li>
+                   <li class="submenu-item"><a href="cabins.html" class="submenu-link">Cabins</a></li>
                 </ul>
              </li>
              <li class="menu-item menu-dropdown">
-                <span class="menu-link" data-toggle="submenu">Hiking Trails<i class="bx bx-chevron-down"></i></span>
+                <span class="menu-link" data-toggle="submenu">Hiking<i class="bx bx-chevron-down"></i></span>
                 <ul class="submenu">
-                   <li class="submenu-item"><a href="#" class="submenu-link">Upper</a></li>
-                   <li class="submenu-item"><a href="#" class="submenu-link">Lower</a></li>
+                   <li class="submenu-item"><a href="upper-river.html" class="submenu-link">Upper River</a></li>
+                   <li class="submenu-item"><a href="lower-river.html" class="submenu-link">Lower River</a></li>
                 </ul>
              </li>
-             -->
-  
-    <header class="primary">
-        <h1><a href="index.html">Buffalo River Adventure Guide – Plan Your Next Getaway</a></h1>
-        <h2>Explore. Camp. Paddle. Hike. Buffalo River Awaits!</h2>
-        <nav role="navigation">
-          <ul>
-            <li><a href="#">Places to Stay</a></li>
-            <li><a href="#">Adventures</a></li>
-            <li><a href="#">Current Weather</a></li>
+             <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
           </ul>
-        </nav>
-        <div id="primary-hero">
-          
-        </div>
-    </header>
-   
-    <section id="content" class="container">
-        <section class="hero-photo-grid">
-          <img src="assets/img/cabins.jpg" alt="cabins"/>
-          <img src="assets/img/camps.jpg" alt="cabins"/>
-          <img src="assets/img/hiking-lower.jpg" alt="cabins"/>
-          <img src="assets/img/hiking-upper.jpg" alt="cabins"/>
-        </section>
-        <section>
-          <ul>
-            <li><a href="">News Article</a></li>
-            <li><a href="">News Article</a></li>
-            <li><a href="">News Article</a></li>
-            <li><a href="">News Article</a></li>
-          </ul>
-        </section>
+       </nav>
     </section>
-    <footer>
-      <p>Buffalo River Adventure Guide | &copy; 2025 | <a href="mailto:contact@gmail.com">Email Us</a> <a href="https://www.buffaloriver.org">Buffalo River Website</a><a href="https://www.buffaloriveroutfitters.com/">Buffalo River Outfitters (My Inspiration)</a></p>
+    <div id="primary-hero">
+          
+    </div>
+ </header> 
+  <section id="content" class="container">
+      <section class="hero-photo-grid">
+        <img src="assets/img/cabins.jpg" alt="cabins"/>
+        <img src="assets/img/camps.jpg" alt="cabins"/>
+        <img src="assets/img/hiking-lower.jpg" alt="cabins"/>
+        <img src="assets/img/hiking-upper.jpg" alt="cabins"/>
+      </section>
+      <aside role="complementary">
+        <div class="container">
+          <article class="widget">
+            <header>
+              <h2>Sample Sidebar Item </h2>
+            </header>
+            <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
+              Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
+            <footer>Widget Footer</footer>
+          </article>
+          <article class="widget">
+            <header>
+              <h2>Sample Sidebar Item </h2>
+            </header>
+            <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
+              Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
+            <footer>Widget Footer</footer>
+          </article>
+        </div>
+      </aside>
+    </section>
+    <footer id="colophon">
+      <h6>Buffalo River Adventure Guide | &copy; 2025</h6>
+      <a href="mailto:contact@gmail.com">Email Us</a> <a href="https://www.buffaloriver.org">Buffalo River Website</a><a href="https://www.buffaloriveroutfitters.com/">Buffalo River Outfitters (My Inspiration)</a>
   </footer>
 </body>
 </html>

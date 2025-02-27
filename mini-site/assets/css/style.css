@@ -46,6 +46,8 @@ nav menu code: https://codepen.io/syahrizaldev/pen/vYRoVZX
     /* #region global styles ------------- */
   
    body {
+    width: 375px; /*---Design time container-------*/
+    border: solid 2px;
     font-family: "Host Grotesk", serif;
     font-size: 1rem;
     background: var(--light-bg);
@@ -87,15 +89,13 @@ img {
 
   /* #region utility ----------------*/
 
- 
 
   .container{
-    width:80vw;
+    width: 80vw;
     margin: 60px auto 80px auto;
     max-width: 1100px;
 }
    
-
 .cta-button {
   color: var(--body-text-inverse);
   text-decoration: none;
@@ -230,4 +230,13 @@ div.social a::after{
 
 /* #endregion utility */
 
+/* #region main css------*/
+#primary-hero {
+  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-450.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+}
   
+/* #endregion main css -------------- */

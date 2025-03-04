@@ -285,7 +285,7 @@ header.primary nav ul li {
   list-style-type: none;
 }
 
-/* #navigation menu------*/
+/* #region navigation menu------*/
 
 
 /*--modified from CodePen responsive nav: https://codepen.io/klmerritt44/pen/RNwogrJ?editors=1100 ---*/
@@ -488,8 +488,7 @@ header.primary nav ul li {
  }
 }
 
-
-/* #navigationend */
+/* #endregion navigation */
 
 #primary-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-1800.jpg);
@@ -528,10 +527,9 @@ header.primary nav ul li {
   position: absolute;
   left: 50%;
 }
-section.hero-photo-grid {
+section#content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 2fr 1fr;
   gap: 1rem;
   height: 100%; /* or set a specific height if you need */
 }
@@ -539,6 +537,10 @@ section.hero-photo-grid {
   background-color: #f0f0f0;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+section.hero-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 section.hero-photo-grid img:hover {

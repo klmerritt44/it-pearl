@@ -90,10 +90,10 @@ img {
   /* #region utility ----------------*/
 
 
-  .container{
-    width: 90%;
-    margin: 60px auto 80px auto;
-    max-width: 1200px;
+.container{
+  width: 90%;
+  margin: 60px auto 80px auto;
+  max-width: 1200px;
 }
 a, button {
   cursor: pointer;
@@ -103,14 +103,12 @@ a, button {
   background: none;
   box-shadow: none;
 }
-
 img, video {
   display: block;
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
-
 .cta-button {
   background-color: #196FAA;
   color: var(--header-text-inverse);
@@ -119,40 +117,41 @@ img, video {
   text-decoration: none;
   margin-top: 10px;
 }
-   
-
+.cta-button {
+  background-color:  #196FAA;
+  color: var(--header-text-inverse);
+  border-radius: 9px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
 .cta-button:hover {
+  opacity: 0.8;
   font-weight: bold;
 }
-
 .img-right{
     float:right;
     margin: 10px 0 10px 20px;
     padding: 5px;
 }
-
 .img-left {
     float:left;
     margin: 10px 20px 10px 0px;
     padding: 5px;
 }
-
 .img-center {
     display: block;
     padding: 5px;
     margin: 20px auto;
     padding: 5px;
 }
-
-   /*
- * Hide visually and from screen readers
- */
-
+   /* Hide visually and from screen readers*/
 .hidden,
 [hidden] {
   display: none !important;
 }
-
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -161,7 +160,6 @@ img, video {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -174,13 +172,11 @@ img, video {
   width: 1px;
   /* 1 */
 }
-
 /*
  * Extends the .visually-hidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
   clip: auto;
@@ -195,7 +191,6 @@ img, video {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-
 .invisible {
   visibility: hidden;
 }
@@ -206,7 +201,6 @@ img, video {
  * The use of `table` rather than `block` is only necessary if using
  * `::before` to contain the top-margins of child elements.
  */
-
 .clearfix::before,
 .clearfix::after {
   content: "";
@@ -296,16 +290,6 @@ header.primary nav ul li {
 
 /*--modified from CodePen responsive nav: https://codepen.io/klmerritt44/pen/RNwogrJ?editors=1100 ---*/
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 100;
-  margin: 0 auto;
-  box-shadow: var(--shadow-medium);
-}
 .wrapper {
   display: flex;
   align-items: center;
@@ -506,12 +490,102 @@ header.primary nav ul li {
 
 
 /* #navigationend */
+
 #primary-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-1800.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 70vh;
   position: relative;
 }
-  
+.arrow {
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 4px #fff solid;
+  border-bottom: 4px #fff solid;
+}
+.arrow:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+.arrow, .arrow:before {
+  position: absolute;
+  left: 50%;
+}
+section.hero-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  height: 100%; /* or set a specific height if you need */
+}
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section.hero-photo-grid img:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Make the last column span both rows */
+.grid-item:last-child {
+  grid-row: span 2;
+}
+
+/*----------hero------------*/
+
+#hero {
+  padding: 4em 0;
+  max-width: 800px;
+  width:80vw;
+  margin: 40px auto;
+}
+div.see-more {
+  text-align: center;
+  margin-top: 90px;
+}
+/* Customize Previous/Next/Dots/Autoplay */
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+color: #000;
+font-size: 2rem;
+}
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+  color:#787878;
+}
+.slick-prev .slick-prev-icon:before {
+  margin: -2rem;
+}
+
+
+   
 /* #endregion main css -------------- */

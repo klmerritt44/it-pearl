@@ -1,3 +1,21 @@
+$(document).ready(function() {
+
+   $('#hero').slick({
+     dots: true,
+     infinite: true,
+     speed: 900,
+     fade: true,
+     slide: 'div',
+     cssEase: 'linear',
+     autoplay: true,
+     autoplaySpeed: 2000
+   });
+
+});
+
+
+//Nav bar Script Start//
+
 const navbarMenu = document.getElementById("navbar");
 const burgerMenu = document.getElementById("burger");
 const overlayMenu = document.querySelector(".overlay");

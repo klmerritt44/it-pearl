@@ -553,6 +553,18 @@ section.hero-photo-grid img:hover {
   grid-row: span 2;
 }
 
+aside .widget a {
+  display: block;
+}
+
+aside .widget a:hover {
+  color: var(--accent-color);
+}
+
+aside .widget footer {
+  font-size: .8rem;
+}
+
 /*----------hero------------*/
 
 #hero {

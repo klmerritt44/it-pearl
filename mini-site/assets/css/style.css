@@ -599,6 +599,19 @@ font-size: 2rem;
 .slick-prev .slick-prev-icon:before {
   margin: -2rem;
 }
+footer#colophon {
+  background-color: var(--dark-bg);
+  color: var(--body-text-inverse);
+  padding: 20px;
+}
+
+footer#colophon h6 {
+  font-size: 1.3rem;
+}
+
+footer#colophon a {
+  color: var(--body-text-inverse);
+}
 
 
    

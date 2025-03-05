@@ -116,13 +116,6 @@ img, video {
   padding: .7em;
   text-decoration: none;
   margin-top: 10px;
-}
-.cta-button {
-  background-color:  #196FAA;
-  color: var(--header-text-inverse);
-  border-radius: 9px;
-  padding: 12px 24px;
-  font-size: 16px;
   cursor: pointer;
   transition: opacity 0.3s ease;
   opacity: 1;
@@ -491,7 +484,7 @@ header.primary nav ul li {
 /* #endregion navigation */
 
 #primary-hero {
-  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-1800.jpg);
+  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-1700.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
@@ -531,19 +524,19 @@ section#content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
-  height: 100%; /* or set a specific height if you need */
+  height: 100%;
 }
 .grid-item {
   background-color: #f0f0f0;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 section.hero-photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-section.hero-photo-grid img:hover {
+.image-container img:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   background-color: rgba(0,0,0,0.1);
 }
@@ -604,13 +597,28 @@ footer#colophon {
   color: var(--body-text-inverse);
   padding: 20px;
 }
-
 footer#colophon h6 {
-  font-size: 1.3rem;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  justify-content: flex-start;
 }
-
 footer#colophon a {
   color: var(--body-text-inverse);
+  text-decoration: none;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px;
+}
+footer#colophon a:hover {
+  text-decoration: underline;
+}
+.top {
+  background: #592B02;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
 }
 
 

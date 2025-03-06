@@ -94,7 +94,21 @@ img {
 
   /* #region utility ----------------*/
 
-
+.banner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+}
+.subpage-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
 .container{
   width: 90%;
   margin: 60px auto 80px auto;
@@ -117,7 +131,7 @@ img, video {
 .cta-button {
   background-color: #196FAA;
   color: var(--header-text-inverse);
-  border-radius: 9px;
+  border-radius: 6px;
   padding: .7em;
   text-decoration: none;
   margin-top: 10px;
@@ -488,40 +502,39 @@ header.primary nav ul li {
 
 /* #endregion navigation */
 
+/* #region hero images----- */
 #primary-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-1700.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  position: relative;
 }
 #cabins-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/jasper-cabin-1700.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  position: relative;
 }
 #camps-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/camping-1700.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  position: relative;
 }
 #lower-river-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/lost-valley-hikers-1700.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  position: relative;
 }
 #upper-river-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/whitaker-summer-sunrise-1700.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  position: relative;
+}
+#weather-hero {
+  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/weather-1700.jpg);
+}
+#contact-hero {
+  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/contact-1700.jpg);
+}
+/*#endregion hero images ---*/
+
+.scroll-hint {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--header-text-inverse);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: bounce 2s infinite;
+  position: absolute;
+  bottom: 80px;
 }
 .arrow {
   width: 40px;

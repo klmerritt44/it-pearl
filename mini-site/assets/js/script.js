@@ -41,6 +41,11 @@ $('.center-slider').slick({
    ]
  });
 
+ //weather api stuff //
+function getTemperature() {
+   alert("Hello Friend!")
+}
+
 
 //Nav bar Script Start//
 

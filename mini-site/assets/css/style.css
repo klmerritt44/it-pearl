@@ -71,6 +71,10 @@ nav menu code: https://codepen.io/syahrizaldev/pen/vYRoVZX
     font-family: "Lexend", serif;
     font-weight: 300;
    }
+
+   h1 {
+    font-size: 2.7em;
+   }
   
    h2 {
     font-size: 2.1em;
@@ -549,6 +553,7 @@ header.primary nav ul li {
   position: absolute;
   left: 50%;
 }
+/*----featured grid on HOME PAGE------*/
 section#featured-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -564,14 +569,8 @@ section.hero-photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-/*
-.image-container img:hover {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: rgba(0,0,0,0.1);
-}
-  */
 
-/* Make the last column span both rows */
+/* Makes the last column span both rows */
 .grid-item:last-child {
   grid-row: span 2;
 }
@@ -618,9 +617,9 @@ aside .widget footer {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: var(--body-text-inverse);
   font-size: 1.5rem;
-  font-weight: bold;
+  
   z-index: 2; /* make sure text stays above overlay */
   pointer-events: none; /* text won't block clicks */
 }
@@ -639,7 +638,7 @@ aside .widget footer {
 }
 
 .info-grid article {
-  background-color: #fff;
+  background-color: var(--light-bg);
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -650,7 +649,7 @@ aside .widget footer {
 
 .info-grid img {
   width: 100%;
-  height: 150px;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -671,7 +670,7 @@ aside .widget footer {
 
 #hero {
   padding: 4em 0;
-  max-width: 800px;
+  max-width: 600px;
   width:80vw;
   margin: 40px auto;
 }
@@ -700,6 +699,12 @@ font-size: 2rem;
 }
 .slick-prev .slick-prev-icon:before {
   margin: -2rem;
+}
+section.center-slider article a {
+  text-decoration: none;
+}
+section.center-slider article a:hover {
+  text-decoration: underline;
 }
 footer#colophon {
   background-color: var(--dark-bg);

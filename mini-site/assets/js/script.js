@@ -1,45 +1,45 @@
 $(document).ready(function() {
-
-   $('#hero').slick({
-     dots: true,
-     infinite: true,
-     speed: 900,
-     fade: true,
-     slide: 'div',
-     cssEase: 'linear',
-     autoplay: true,
-     autoplaySpeed: 2000
-   });
-
+   
+   $('.center-slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+    $('#hero').slick({
+      dots: true,
+      infinite: true,
+      speed: 900,
+      fade: true,
+      slide: 'div',
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
 });
 
-$('.center-slider').slick({
-   centerMode: true,
-   centerPadding: '60px',
-   slidesToShow: 3,
-   responsive: [
-     {
-       breakpoint: 768,
-       settings: {
-         arrows: false,
-         dots: true,
-         centerMode: true,
-         centerPadding: '40px',
-         slidesToShow: 3
-       }
-     },
-     {
-       breakpoint: 480,
-       settings: {
-         arrows: false,
-         dots: true,
-         centerMode: true,
-         centerPadding: '40px',
-         slidesToShow: 1
-       }
-     }
-   ]
- });
+
 
  //weather api stuff //
 function getTemperature() {

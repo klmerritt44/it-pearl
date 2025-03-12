@@ -23,8 +23,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header id="primary">
   <h1>Kristena Merritt</h1>
-  <nav>
+  <nav id="primary">
     <h2>Programming & Web Development</h2>
     <ul>
         <li><a href="prototype/index.html">Prototype HTML Assignment</a></li>
@@ -46,12 +47,78 @@
             <li><a href="pet-rock-practice/index.html">My js pet rock</a></li>
           </ul>
         </li> -->
-        <li><a href="assets/img/isometric-icon.png">Isometric Icon YAY! I did it!</a></li>
+        <li><a href="assets/img/isometric-icon.png">Isometric Icon</a></li>
         <li><a href="calculator/index.html">JS Calculator</a></li>
         <li><a href="mini-site/index.html">Microsite Project</a></li>
         <li><a href="slick-demo/index.html">Slick Demo</a></li>
         </ul>
   </nav>
+  </header>
+  <main>
+    <section id="content" class="container">
+      <article id="progressive-enhancement">
+        <h1>Progressive Enhancement is My Jam!</h1>
+        <p>It prioritizes accessibility, performance, and a better user experience for everyone, regardless of their device, browser, or internet connection.</p>
+        <h2>Content: The Heart of Progressive Enhancement</h2>
+        <p>I love progressive enhancement because it focuses on content first. A solid HTML foundation ensures accessibility, and good markup improves usability. Even in CMS-driven environments, ensuring core content is always accessible should be the goal.</p>
+        <h2>The Layers of Progressive Enhancement</h2>
+        <ol>
+          <li>HTML: The Foundation – Ensures content is accessible on any browser.</li>
+          <li>CSS: The Visual Layer – Enhances styling without affecting usability.</li>
+          <li>JavaScript: The Extras – Adds interactivity but remains non-essential.</li>
+        </ol>
+        <h2>Why does progressive enhancment matter (still)?</h2>
+        <h3>Performance Matters</h3>
+        <p>Websites relying too much on JavaScript suffer from slow load times. Progressive enhancement keeps sites lean and fast, as seen with YouTube, which ensures video playback works even when JavaScript is off.</p>
+        <h3>Accessibility Matters</h3>
+        <p>HTML-first development improves screen reader support and keyboard navigation. Starbucks, for example, prioritizes accessibility with progressive enhancement.</p>
+        <section id="progressive-enhancement-practice">
+          <h2>Progressive Enhancement in Practice</h2>
+        
+          <article id="navigation-menus">
+            <h3>Navigation Menus</h3>
+            <ul>
+              <li><strong>Baseline:</strong> A simple HTML <code>&lt;nav&gt;</code> with links ensures core navigation always works.</li>
+              <li><strong>Enhanced:</strong> CSS improves layout and styling for better readability.</li>
+              <li><strong>Further Enhanced:</strong> JavaScript adds a dropdown menu for mobile users, but the links still function without it.</li>
+            </ul>
+          </article>
+        
+          <article id="images-media">
+            <h3>Images & Media</h3>
+            <ul>
+              <li><strong>Baseline:</strong> A standard <code>&lt;img&gt;</code> tag ensures images load everywhere.</li>
+              <li><strong>Enhanced:</strong> CSS <code>@supports</code> applies modern image styles only if the browser can handle them.</li>
+              <li><strong>Further Enhanced:</strong> JavaScript lazy loads images for performance, but the site remains functional without it.</li>
+            </ul>
+          </article>
+        
+          <article id="css-supports">
+            <h3>Using <code>@supports</code> for Smart Enhancements</h3>
+            <p>Even with newer CSS features, progressive enhancement remains key:</p>
+            <ul>
+              <li>Use <strong>CSS feature detection</strong> (<code>@supports</code>) to apply styles only when supported.</li>
+              <li>Provide <strong>fallbacks</strong> for unsupported features.</li>
+              <li>Use <strong>JavaScript as a polyfill</strong> only when necessary.</li>
+            </ul>
+            <p>GitHub’s responsive design follows this principle, keeping its interface functional on all devices.</p>
+          </article>
+        </section>
+        <h1>Unprogressive Non-Enhancement?</h1>
+        <p>A little part of me wants to troll the JavaScript-heavy developers by advocating for unprogressive non-enhancement—which means not adding unnecessary JavaScript when the browser already does the job.</p>
+        <ul>
+          <li>Use a <code>&lt;button&gt;</code> for a button.</li>
+          <li>Use an <code>&lt;a&gt;</code> for a link.</li>
+          <li>Use CSS for animations when possible.</li>
+        </ul>
+        <p>Why complicate things? JavaScript is amazing, but use it wisely. Default to native browser behavior and only enhance when needed.</p>
+        <h2>The Big Takeaway</h2>
+        <p>Don’t rely on JavaScript for essential features like navigation or content visibility. If your site breaks without JS, rethink your approach.</p>
+        <p>Let’s build lean, accessible, and resilient websites that work everywhere. It’s not just best practice—it’s the right way to build for the web.</p>
+        <p>And honestly? I just love HTML. I found this additional article related to PE called, "<a href="https://dev.to/quii/the-web-i-want-43o" title="Links opens to external site.">The Web I Want</a>" that covers the importance of telling clients "No" but explaining the why behind it because at the end of the day <q>... the goal of most websites is delivering useful textual content, and all you really need for that is HTML.</q></p>
+      </article>
+    </section>
+  </main>
   <section id="rss-feed">
     <h2>Latest Blog Posts</h2>
   </section>

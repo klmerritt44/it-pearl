@@ -8,18 +8,64 @@ peach sand { color: #F2ECE9; }
 */
 
 body {
-    background-color: #F2ECE9;
-    color: #093640;
+    background-color: #1a2652;
+    color: #ece8e8;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3em;
+  box-sizing: border-box;
+}
+header#primary{
+  background-image: url(https://klmerritt44.github.io/it-pearl/assets/img/abstract-bg-1700.jpeg);
+  background-position: cover;
+}
+
+header#primary nav#primary {
+  padding: 1em;
+}
+
+header#primary nav#primary ul li {
+  text-decoration: none;
+}
+
+header#primary nav#primary ul li a {
+  text-decoration: none;
+  color: #ede8f5;
+}
+
+header#primary nav#primary ul li a:hover {
+  text-decoration: underline;
+}
+
 h1 {
     font-family: "Sour Gummy", serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
+  font-size: 2.4rem;
   font-variation-settings:"wdth" 100;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+main section#content {
+  max-width: 80vw;
+  background-color: #ede8f5;
+  margin: auto;
+  color:#1a2652;
+}
+
+main section#content article#progressive-enhancement {
+
 }

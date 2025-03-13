@@ -14,13 +14,13 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    font-size: 1.1rem;
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 3em;
+  max-width: 900px;
+  margin: 4em auto;
+  padding: 2em 4em;
   box-sizing: border-box;
 }
 header#primary::before {
@@ -52,14 +52,6 @@ header#primary {
   position: relative;
 }
 
-/*
-header#primary{
-  background-image: url(https://klmerritt44.github.io/it-pearl/assets/img/abstract-bg-1700.jpeg);
-  background-position: cover;
-  
-  
-}
-*/
 header#primary nav#primary {
   padding: 1em;
 }

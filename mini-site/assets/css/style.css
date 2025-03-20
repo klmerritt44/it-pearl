@@ -112,7 +112,7 @@ img {
 .container{
   width: 90%;
   margin: 60px auto 80px auto;
-  max-width: 1200px;
+  max-width: 700px;
 }
 a, button {
   cursor: pointer;
@@ -718,6 +718,47 @@ section.center-slider article a {
 }
 section.center-slider article a:hover {
   text-decoration: underline;
+}
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+label {
+  font-weight: bold;
+  color: var(--body-text);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  background-color: var(--dark-bg);
+  color: var(--body-text-inverse);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #3f95ce;
 }
 footer#colophon {
   background-color: var(--dark-bg);

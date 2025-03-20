@@ -1,32 +1,5 @@
 $(document).ready(function() {
    
-   $('.center-slider').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            dots: true,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            dots: true,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1,
-          }
-        }
-      ]
-    });
     $('#hero').slick({
       dots: true,
       infinite: true,
@@ -38,13 +11,34 @@ $(document).ready(function() {
       autoplaySpeed: 2000
     });
 });
+$('.center-slider').slick({
+   centerMode: true,
+   centerPadding: '60px',
+   slidesToShow: 3,
+   responsive: [
+     {
+       breakpoint: 768,
+       settings: {
+         arrows: false,
+         dots: true,
+         centerMode: true,
+         centerPadding: '40px',
+         slidesToShow: 3
+       }
+     },
+     {
+       breakpoint: 480,
+       settings: {
+         arrows: false,
+         dots: true,
+         centerMode: true,
+         centerPadding: '40px',
+         slidesToShow: 1
+       }
+     }
+   ]
+ });
 
-
-
- //weather api stuff //
-function getTemperature() {
-   alert("Hello Friend!")
-}
 //contact form script//
  /* paste this line in verbatim */
  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};

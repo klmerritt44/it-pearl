@@ -10,8 +10,6 @@
   <meta name="robots" content="noindex">
   <link rel="icon" href="assets/includes/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -51,12 +49,12 @@
         <div id="weather-hero" class="subpage-banner">
         </div>
     </header>
-    <section class="content">
+    <section class="content container">
         <form>
             <label>Enter Location
                 <input type="text" value="Eureka Springs Arkansas"/>
             </label>
-            <input type="submit" value="Go!" onclick="getTemperature()">
+            <button type="button" onclick="getTemperature()">Go!</button>
         </form>
     </section>
     <footer id="colophon">
@@ -68,7 +66,7 @@
           </div>
           </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/weather.js"></script>
 </body>
 </html>
 

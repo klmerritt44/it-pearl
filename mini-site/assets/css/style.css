@@ -28,7 +28,9 @@ nav menu code: https://codepen.io/syahrizaldev/pen/vYRoVZX
     --accent-color:#BFB304;
     --accent-color-2: #592B02;
     --dark-bg-opacity: rgba(78, 69, 126, 0.7);
+    --button-color: #3f95ce;
     --standard-padding: 30px;
+    --min-padding: 10px;
   }
   
   html {
@@ -679,7 +681,7 @@ aside .widget footer {
   flex-grow: 1;
 }
 
-/*----------hero------------*/
+/*----------hero carousel------------*/
 
 #hero {
   padding: 4em 0;
@@ -758,7 +760,55 @@ button {
 }
 
 button:hover {
-  background-color: #3f95ce;
+  background-color: var(--button-color);
+}
+/* weather table start */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+table caption {
+  padding: var(--min-padding);
+  color: var(--header-text);
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+
+/* Sticky header */
+#weather-table-container thead {
+  background-color: var(--dark-bg);
+  color: var(--body-text-inverse);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #d4e6f1;
+}
+
+/* Table Borders */
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Responsive table with scroll */
+#weather-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
 }
 footer#colophon {
   background-color: var(--dark-bg);
@@ -785,7 +835,7 @@ footer#colophon a:hover {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: var(--body-text-inverse);
   text-decoration: none;
 }
 

@@ -37,7 +37,13 @@
 
             }
         })
-        //alert(latitude);
     });
     
+ }
+
+ function clearForm() {
+    document.getElementById("weather-location").value = "";
+    document.getElementById("location-info").innerHTML = "";
+    document.getElementById("weather-table-container").innerHTML = "";
+    document.getElementById("weather-chart").innerHTML = "";
  }

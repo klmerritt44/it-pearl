@@ -1,4 +1,6 @@
  //weather api stuff //
+ let weatherChart;
+
  function getTemperature() {
     let locationValue = document.getElementById("weather-location").value;
     locationValue = encodeURIComponent(locationValue);
@@ -34,6 +36,25 @@
                 }
                 weatherTable = weatherTable + "</table>"
                 document.getElementById("weather-table-container").innerHTML = weatherTable;
+                
+                const xValues = times;
+                const yValues = temperatures;
+                weatherChart = new Chart("weather-chart", {
+                    type: "line",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                            data: yValues,
+                            fill: false,
+                            backgroundColor: "#3f95ce",
+                            label: "Temperatures",
+                            borderColor: "#3f95ce",
+                        }]
+                    },
+                    options: {
+                        
+                    }
+                });
 
             }
         })
@@ -45,5 +66,9 @@
     document.getElementById("weather-location").value = "";
     document.getElementById("location-info").innerHTML = "";
     document.getElementById("weather-table-container").innerHTML = "";
-    document.getElementById("weather-chart").innerHTML = "";
+    if (weatherChart) {
+        weatherChart.destroy();
+    }
  }
+
+ 

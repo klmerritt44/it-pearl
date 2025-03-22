@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 </head>
 <body>
     <header class="primary">
@@ -52,14 +54,14 @@
     <section class="form-container">
         <form>
             <label>Enter City Name
-                <input id="weather-location" type="text" value="Eureka Springs Arkansas"/>
+                <input id="weather-location" type="text" value="Buffalo National River"/>
             </label>
             <button type="button" onclick="getTemperature()">Display Temp</button>
             <button type="button"onclick="clearForm()">Clear</button>
         </form>
         <section id="location-info"></section>
         <div id="weather-table-container"></div>
-        <div id="weather-chart"></div>
+        <canvas id="weather-chart" style="width:100%;max-width:700px"></canvas>
     </section>
     <footer id="colophon">
         <h6>Buffalo River Adventure Guide | &copy; 2025 </h6>

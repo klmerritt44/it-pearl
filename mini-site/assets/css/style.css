@@ -506,10 +506,10 @@ header.primary nav ul li {
 
 /* #region hero images----- */
 #primary-hero {
-  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color-1700.jpg);
+  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/bluff-fall-color.jpg);
 }
 #cabins-hero {
-  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/jasper-cabin-1700.jpg);
+  background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/big-sky-cabin.jpg);
 }
 #camps-hero {
   background-image: url(https://klmerritt44.github.io/it-pearl/mini-site/assets/img/camping-1700.jpg);
@@ -679,6 +679,62 @@ aside .widget footer {
   font-size: 0.9rem;
   color: #555;
   flex-grow: 1;
+}
+
+/*----Trail cards ------*/
+.trails-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.trail-card {
+  background:var(--light-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 15px;
+}
+
+.trail-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trail-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.trail-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.trail-card span {
+  display: block;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  color: #777;
+}
+
+.trail-card a {
+  display: inline-block;
+  background: var(--button-color);
+  color: var(--body-text-inverse);
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.trail-card:hover {
+  transform: scale(1.05);
 }
 
 /*----------hero carousel------------*/

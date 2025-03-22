@@ -13,7 +13,7 @@
             let temperatures = weatherJson.hourly.temperature_2m;
             let times = weatherJson.hourly.time;
             if (temperatures.length > 0) {
-                weatherTable = weatherTable + "<table><caption>Hourly Temperature</caption><tr><th>Date</th><th>Temp</th></tr>";
+                weatherTable = weatherTable + "<table><caption>7-Day Forecast: Hourly Temperature</caption><tr><th>Date</th><th>Temp</th></tr>";
                 for (let i = 0; i < temperatures.length; i++) {
                     // // Convert date to unix milliseconds
                     let unixmillsec = Date.parse(times[i]);

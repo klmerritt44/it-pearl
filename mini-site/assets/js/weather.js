@@ -9,6 +9,18 @@
         .then(weatherResponse => weatherResponse.json())
         .then(weatherJson => {
             console.log(weatherJson)
+        let weatherTable = "";
+        let temperatures = weatherJson.hourly.temperature_2m;
+        let times = weatherJson.hourly.time;
+        if (temperatures.length > 0) {
+            weatherTable = weatherTable + "<table><caption>Hourly Temperature</caption><tr><th>Date</th><th>Temp</th></tr>";
+            for (let i = 0; i < temperatures.length; i++) {
+                weatherTable = weatherTable + "<tr><td>" + times[i] + "</td><td>" + temperatures[i] + "</td></tr>";
+            }
+            weatherTable = weatherTable + "</table>"
+            document.getElementById("weather-table-container").innerHTML = weatherTable;
+        }
+
         // // Convert date to unix milliseconds
         // let unixmillsec = Date.parse(weatherJson.hourly.time[i]);
         // // Create temporary date variable 

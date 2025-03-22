@@ -1,6 +1,10 @@
  //weather api stuff //
  function getTemperature() {
-    fetch("https://geocoding-api.open-meteo.com/v1/search?name=Eureka+Springs&count=10&language=en&format=json")
+    let locationValue = document.getElementById("weather-location").value;
+    locationValue = encodeURIComponent(locationValue);
+    let weatherURL = "https://geocoding-api.open-meteo.com/v1/search?name=" + locationValue + "&count=10&language=en&format=json";
+    fetch(weatherURL)
+    //fetch("https://geocoding-api.open-meteo.com/v1/search?name=Eureka+Springs&count=10&language=en&format=json")
     .then(response => response.json())
     .then(json => {
         let latitude = json.results[0].latitude;
@@ -9,10 +13,14 @@
         .then(weatherResponse => weatherResponse.json())
         .then(weatherJson => {
             console.log(weatherJson)
-            let weatherTable = "";
+
             let temperatures = weatherJson.hourly.temperature_2m;
             let times = weatherJson.hourly.time;
+
             if (temperatures.length > 0) {
+                document.getElementById("location-info").innerHTML = json.results[0].name + ", " + json.results[0].admin1 + ", " + json.results[0].country + "<br/>Latitude = " + json.results[0].latitude + " - Longitude = " + json.results[0].longitude;
+
+                let weatherTable = "";
                 weatherTable = weatherTable + "<table><caption>7-Day Forecast: Hourly Temperature</caption><tr><th>Date</th><th>Temp</th></tr>";
                 for (let i = 0; i < temperatures.length; i++) {
                     // // Convert date to unix milliseconds

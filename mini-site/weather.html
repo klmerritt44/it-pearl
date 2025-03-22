@@ -49,13 +49,14 @@
         <div id="weather-hero" class="subpage-banner">
         </div>
     </header>
-    <section class="content container">
+    <section class="form-container">
         <form>
-            <label>Enter Location
-                <input type="text" value="Eureka Springs Arkansas"/>
+            <label>Enter City Name
+                <input id="weather-location" type="text" value="Eureka Springs Arkansas"/>
             </label>
             <button type="button" onclick="getTemperature()">Go!</button>
         </form>
+        <section id="location-info"></section>
         <div id="weather-table-container"></div>
     </section>
     <footer id="colophon">

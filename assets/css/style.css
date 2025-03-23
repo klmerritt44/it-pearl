@@ -90,6 +90,11 @@ main section#content {
   color:#1a2652;
 }
 
+article#reflection {
+  border-bottom: solid 2px #1a2652;
+  margin-bottom: 30px;
+}
+
 footer#colophon {
   background-color: #0a2c38;
   padding: 10px;

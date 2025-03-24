@@ -821,6 +821,12 @@ button {
   transition: background 0.3s ease;
 }
 
+div.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 button:hover {
   background-color: var(--button-color);
 }
@@ -871,6 +877,7 @@ th, td {
   max-height: 400px;
   overflow-y: auto;
   border: 1px solid #ccc;
+  display: none;
 }
 footer#colophon {
   background-color: var(--dark-bg);

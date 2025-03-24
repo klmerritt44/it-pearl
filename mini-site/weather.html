@@ -56,8 +56,10 @@
             <label>Enter City Name
                 <input id="weather-location" type="text" value="Buffalo National River"/>
             </label>
-            <button type="button" onclick="getTemperature()">Display Temp</button>
-            <button type="button"onclick="clearForm()">Clear</button>
+            <div class="button-container">
+                <button type="button" onclick="getTemperature()">Display Temp</button>
+                <button type="button"onclick="clearForm()">Clear</button>
+            </div>
         </form>
         <section id="location-info"></section>
         <div id="weather-table-container"></div>

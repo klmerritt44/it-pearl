@@ -1,5 +1,6 @@
  //weather api stuff //
  let weatherChart;
+ let weatherTableContainer = document.getElementById("weather-table-container");
 
  function getTemperature() {
     let locationValue = document.getElementById("weather-location").value;
@@ -43,8 +44,9 @@
                     weatherTable = weatherTable + "<tr><td>" + times[i] + "</td><td>" + temperatures[i] + "</td></tr>";
                 }
                 weatherTable = weatherTable + "</table>"
-                document.getElementById("weather-table-container").innerHTML = weatherTable;
-                
+                weatherTableContainer.innerHTML = weatherTable;
+                weatherTableContainer.style.display = "block";
+
                 const xValues = times;
                 const yValues = temperatures;
                 weatherChart = new Chart("weather-chart", {
@@ -73,7 +75,8 @@
  function clearForm() {
     document.getElementById("weather-location").value = "";
     document.getElementById("location-info").innerHTML = "";
-    document.getElementById("weather-table-container").innerHTML = "";
+    weatherTableContainer.innerHTML = "";
+    weatherTableContainer.style.display = "none";
     if (weatherChart) {
         weatherChart.destroy();
     }

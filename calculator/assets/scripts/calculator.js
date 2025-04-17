@@ -1,4 +1,4 @@
-//this came from the minmaxcode on bruces site and needs to be updated
+
 
 function calculate() {
     "use strict";
@@ -15,43 +15,38 @@ function calculate() {
         
         /* figure out which operator was checked and place the value in operator */
         let operator;
-        if (document.getElementById("MinOperator").checked) {
-            operator = document.getElementById("MinOperator").value;
+        if (document.getElementById("AddOperator").checked) {
+            operator = document.getElementById("AddOperator").value;
         }
-        if (document.getElementById("MaxOperator").checked) {
-            operator = document.getElementById("MaxOperator").value;
+        if (document.getElementById("SubtractOperator").checked) {
+            operator = document.getElementById("SubtractOperator").value;
         }
-        if (document.getElementById("AvgOperator").checked) {
-            operator = document.getElementById("AvgOperator").value;
+        if (document.getElementById("MultiplyOperator").checked) {
+            operator = document.getElementById("MultiplyOperator").value;
         }
-
+        if (document.getElementById("DivideOperator").checked) {
+            operator = document.getElementById("DivideOperator").value;
+        }
+        
         let result;
         
         /* adding operand1 and 2 */
-        if (operator == "Min") {
-            if(operand1fp <= operand2fp) {
-                result = operand1fp;
-            }
-            if(operand2fp <= operand1fp) {
-                result = operand2fp;
-            }
-        }
- 
-        /* if the operator was "Max" then set result to the maximum */
-        if (operator == "Max") {
-            if(operand1fp >= operand2fp) {
-                result = operand1fp;
-            }
-            if(operand2fp >= operand1fp) {
-                result = operand2fp;
-            }
+        if (operator == "Add") {
+            result = operand1fp + operand2fp;
         }
 
-        /* if operator was "Avg" the calcualute the average of 2 operands */
-        if (operator == "Avg") {
-            result = (operand1fp + operand2fp) / 2.0;
+        if (operator == "Subtract") {
+            result = operand1fp - operand2fp;
         }
-        
+
+        if (operator == "Multiply") {
+            result = operand1fp * operand2fp;
+        }
+
+        if (operator == "Divide") {
+            result = operand1fp / operand2fp;
+        }
+
         /* convert the result to a string and display it */
         document.getElementById("Result").innerHTML = result.toString();
     }

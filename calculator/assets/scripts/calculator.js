@@ -59,9 +59,10 @@ function clearform() {
     document.getElementById("Operand2").value = "";
     document.getElementById("Operand1Error").innerHTML = "";
     document.getElementById("Operand2Error").innerHTML = "";
-    document.getElementById("MinOperator").checked = false;
-    document.getElementById("MaxOperator").checked = false;
-    document.getElementById("AvgOperator").checked = false;
+    document.getElementById("AddOperator").checked = false;
+    document.getElementById("SubtractOperator").checked = false;
+    document.getElementById("MultiplyOperator").checked = false;
+    document.getElementById("DivideOperator").checked = false;
     document.getElementById("OperatorError").innerHTML = "";
     document.getElementById("Result").innerHTML = "";
 }
